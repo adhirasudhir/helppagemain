@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/drk.jpg);
+	height: 93vh;
+	background-size: cover;
+	background-position: center; 
+}
+ul{
+	float: right;
+	list-style: none;
+    margin-top: 25px
+} ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 25px;
+	border: 1px ;
+	transition: 0.6s ease;  
+	}
+	ul li a:hover {
+		background-color: #fff;
+		color: #000;  
+	}
+	ul li.active a{
+		background-color: #fff;
+		color: #000;
+	}
+	.logo img{
+		
+		float: left;
+		margin-top: 15px;
+		width: 100px;
+		height: 50px;
+
+	}
+	.main{
+		max-width: 1200px;
+		margin: auto;
+	}
+	.title{
+		position: absolute;
+		top: 50%;
+		left: 47%;
+		transform: translate(-50%,-50%);
+
+	}
+	.title h1{
+		color: white;
+		font-size: 70px;
+	}
+	.button{
+		position: absolute;
+		top: 120%;
+		left: 50%;
+		transform: translate(-50%,-50%); 
+	}
+	.btn{
+		border: 3px solid black;
+   		padding: 10px 30px;
+   		color: black;
+   		background-color: white;
+   		font-weight: bold;
+   		text-decoration: none;
+   		transition: 0.06 ease;
+	}
+	.btn:hover{
+       background-color: yellow;
+       color: red;
+	}
+	.intro{
+		color: aqua;
+		font-size: 40px;
+		position: bottom;
+		text-align: center;
+	}
+	.intro :hover{
+		background-color: white;
+		text-align: center;
+		color: black;
+	}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <link rel="manifest" href="./manifest.json">
+  <title>Helpage | Purpose-Built favourites site</title>
+
+  <!--  Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!--  StyleSheet  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bookmarks.css">
+
+  <!--  Font Awesome  -->
+  <script src="https://kit.fontawesome.com/a9bed65047.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!--  Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+
+  <!--  Favicon  -->
+  <link rel="shortcut icon" href="images/green-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/home.ico" type="image/x-icon">
+
+  <!--  Bootstrap JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+
+<body class="light_dark" onload="fetchBookmarks()">
+  <div class="row" id="bookmarks_parent" style="display: none;">
+    <div id="bookmarks" class="light_dark">
+      <form id="myForm" class="col-12">
+        <div class="col-4 form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Enter Name for Bookmark">
+        </div>
+        <div class="col-4 form-group">
+          <label for="">URL</label>
+          <input type="text" class="form-control" id="siteURL" placeholder="Enter URL to Bookmark">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Bookmark</button>
+      </form>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg light_dark ">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand" id="helpage">Helpage</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color:#fff; font-size:30px; margin:auto 0;"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="navbar-nav mr-auto">
+
+          <div class="nav-item dropdown" style="display: flex; height: 44.5px">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Bookmarks</a>
+            <div class="dropdown-menu bookmarks light_dark" aria-labelledby="navbarDropdownMenuLink"
+              id="bookmarksOutput"></div>
+            <button class="btn light_dark" id="bookmarks_toggler">&plus; Add</button>
+
+          </div>
+
+          <!-- <div class="nav-item"><a href="README.md" class="nav-link active">About</a></div> -->
+
+          
+          </div>         
+
+        </div>
+      </div>
+  </nav>
+
+  <!-- heading -->
+  <!-- <WELCOME MESSAGE> -->
+  <!-- Add your Name Below after "Welcome, __" . -->
+  <div class="row">
+    <div id="salutation" class="col-12 light_dark">
+      Welcome, <span id="user_name">User</span>
+    </div>
+  </div>
+
+  <!-- search bar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <form class="d-flex search" action="https://www.google.com/search">
+        <input class="form-control me-2 searchBar light_dark_neo" type="search" autofocus="autofocus"
+          placeholder="Powered by Google..." aria-label="Search" name=q id=q>
+        <button class="btn btn-outline btn-dark searchButton light_dark_neo" type="submit">🔍</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Icons -->
+
+  <div class="container">
+    <div class="row bootstrapRow">
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="file:website/index.html" target="_blank">
+            <img src="assets/logoo.svg" alt="kaggle" height="100">
+          </a>
+          <span class="hover_txt">Skill Learning</span>
+        </div>
+		<h6> Design Your Code </h6>
+		
+      </div>
+	
+	
+	<!-- <ADD ICON HERE> -->
+
+      <!-- LinkedIn -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo ">
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <img src="assets/linkedin.svg" alt="linkedin" height="100px">
+          </a>
+          <span class="hover_txt">LinkedIn</span>
+		  
+        </div>
+		<h6>LinkedIn  </h6>
+      </div>
+	  
+	 <!-- <ADD ICON HERE> -->
+
+      <!-- youtube -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="assets/youtube.svg" alt="youtube" height="100px">
+          </a>
+          <span class="hover_txt">YouTube</span>
+        </div>
+		<h6>YouTubes </h6>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- instagram -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="assets/instagram.svg" alt="instagram" height="100px">
+          </a>
+          <span class="hover_txt">Instagram</span>
+        </div>
+		<h6>Instagram </h6>
+      </div>
+	
+
+
+	      <!-- <ADD ICON HERE> -->
+
+      <!-- Whatsapp -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="assets/WhatsApp.svg" alt="Whatsapp" height="100px">
+          </a>
+          <span class="hover_txt">Whatsapp</span>
+        </div>
+		<h6>WhatsApp </h6>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- medium -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="httpshttps://www.facebook.com/" target="_blank">
+            <img src="assets/Facebook.svg" alt="medium" height="100px">
+          </a>
+          <span class="hover_txt">Facebook</span>
+        </div>
+		<h6>Facebook </h6>
+      </div>
+	  
+	        <!-- <ADD ICON HERE> -->
+
+      <!-- GitHub -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo ">
+          <a href="https://github.com/" target="_blank">
+            <img src="assets/github.svg" alt="github" height="100px">
+          </a>
+          <span class="hover_txt">GitHub</span>
+        </div>
+		<h6>GitHub </h6>
+      </div>
+
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- W3school -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.w3schools.com/" target="_blank">
+            <img src="assets/W3Schools_logo.svg" alt="hackerrank" height="100">
+          </a>
+          <span class="hover_txt">W3School</span>
+        </div>
+		<h6>W3School </h6>
+      </div>
+
+
+
+
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- Google Classroom -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://classroom.google.com/u/1/h" target="_blank">
+            <img src="assets/google-classroom.svg" alt="GoogleClassroom" height="100px">
+          </a>
+          <span class="hover_txt">Classroom</span>
+        </div>
+		<h6>Google Classroom  </h6>
+      </div>
+
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- drive -->
+	
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://drive.google.com/drive/my-drive" target="_blank">
+            <img src="assets/drive.svg" alt="drive" height="100px">
+          </a>
+          <span class="hover_txt">Drive</span>
+        </div>
+		<h6>Google Drive </h6>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- google calendar -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://calendar.google.com/calendar/u/0/r/week" target="_blank">
+            <img src="assets/calendar.svg" alt="calendar" height="100">
+          </a>
+          <span class="hover_txt">Calendar</span>
+        </div>
+		<h6>Calendar </h6>
+      </div>
+
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- Codeforces -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-552990718%3A1673845629529160&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AeAAQh5D4TDtradQV7_o9AvP9rEQDEizhd_MlcSWqDVL1I2WmzCJMl8sS1QAaHb79SUSP3AQ4fewaA" target="_blank">
+            <img src="assets/gmail.svg" alt="Gmail" height="100">
+          </a>
+          <span class="hover_txt">Gmail</span>
+        </div>
+		<h6> Gmail </h6>
+      </div>
+
+	<!-- <ADD ICON HERE> -->
+
+      <!-- AMAZON -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.amazon.in/" target="_blank">
+            <img src="assets/amazon.svg" alt="amazon" height="100px">
+          </a>
+          <span class="hover_txt">Amazon</span>
+		  
+        </div>
+		<h6>Amazon </h6>
+      </div>
+	  
+	  <!-- <ADD ICON HERE> -->
+
+      <!-- Black Box -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.blackbox.com/en-us/home" target="_blank">
+            <img src="assets/Black Box.svg" alt="kaggle" height="100">
+          </a>
+          <span class="hover_txt">Black Box</span>
+        </div>
+		<h6> Black Box </h6>
+		
+      </div>
+
+		  <!-- <ADD ICON HERE> -->
+
+      <!-- Black Box -->
+
+
+
+      <!-- end of icons bar -->
+    </div>
+  </div>
+  <div class="footer">
+    © 2023 | Helpage | Developed By - Sudhir and Drishti 
+  </div>
+  <!-- <script>
+    // for dark mode toggle
+    
+  </script> -->
+  <script src="index.js"></script>
+  <script src="bookmarks.js"></script>
+  <!--  Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>

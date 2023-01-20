@@ -1,0 +1,158 @@
+<!-- <ADD ICON HERE> -->
+
+      <!-- Black Box -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.blackbox.com/en-us/home" target="_blank">
+            <img src="assets/Black Box.svg" alt="kaggle" height="100">
+          </a>
+          <span class="hover_txt">Black Box</span>
+        </div>
+		<h6> Black Box </h6>
+		
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- LeetCode -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://leetcode.com/" target="_blank">
+            <img src="assets/leetCode.svg" alt="LeetCode" height="100">
+          </a>
+          <span class="hover_txt">LeetCode</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- codepen.io -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://codepen.io/pen/" target="_blank">
+            <img src="assets/codepen.svg" alt="codepen" height="100">
+          </a>
+          <span class="hover_txt">CodePen</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- Udemy -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.udemy.com/" target="_blank">
+            <img src="assets/udemy_new.svg" alt="Udemy" height="100">
+          </a>
+          <span class="hover_txt">Udemy</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- coursera -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.coursera.org/in" target="_blank">
+            <img src="assets/coursera.svg" alt="coursera" height="100">
+          </a>
+          <span class="hover_txt">Coursera</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- trello -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://trello.com/b/NOBWQe1g/codechef-graphic-designers" target="_blank">
+            <img src="assets/trello.svg" alt="trello" height="100px">
+          </a>
+          <span class="hover_txt">Trello</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- personal gmail -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+            <img src="assets/gmailpersonal.svg" alt="gmailpersonal" height="100px">
+          </a>
+          <span class="hover_txt">Personal Mail</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- college mail -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
+            <img src="assets/gmailcollege.svg" alt="gmailcollege" height="100px">
+          </a>
+          <span class="hover_txt">College Mail</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- Chess -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://www.chess.com/home" target="_blank">
+            <img src="assets/chess.svg" alt="chess" height="100">
+          </a>
+          <span class="hover_txt">Chess.com</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- lichess -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://lichess.org/" target="_blank">
+            <img src="assets/lichess.svg" alt="lichess" height="100">
+          </a>
+          <span class="hover_txt">lichess</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- medium -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://medium.com/" target="_blank">
+            <img src="assets/medium.svg" alt="medium" height="100px">
+          </a>
+          <span class="hover_txt">Medium</span>
+        </div>
+      </div>
+
+      <!-- <ADD ICON HERE> -->
+
+      <!-- unsplash -->
+
+      <div class="col-sm-4 col-4 col-lg-2 col-md-3">
+        <div class="icons light_dark_neo">
+          <a href="https://unsplash.com/" target="_blank">
+            <img src="assets/unsplash.svg" alt="unsplash" height="100px">
+          </a>
+          <span class="hover_txt">Unsplash</span>
+        </div>
+      </div>
+
